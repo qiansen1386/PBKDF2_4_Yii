@@ -8,13 +8,13 @@ Install
 -------------
 ###Easy Way:###
 
-Put in
+Put HashHelper class file in
 
-    protected/extensions
+``protected/extensions``
 
 folder. And put
 
-    'ext.pbkdf2.HashHelper'
+``'ext.pbkdf2.HashHelper'``
 
 inside config/main.php, like following:
 
@@ -42,7 +42,7 @@ Use
 ###To Hash Password###
     HashHelper::hashPassword($raw_text);
 ###To verify Password###
-    HashHelper::verifyPassword($rawPassword, $good_hash));
+    HashHelper::verifyPassword($raw_text, $good_hash));
 
 Format
 -------------

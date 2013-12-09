@@ -46,15 +46,19 @@ Config
 ###Easy Way###
 Don't change any thing.
 ###Expert Way###
-Check out the source page. And my edition as well, you will notice what i simplified.
+Check out the source page. And my edition as well, you will notice what I simplified.
 
 [PBKDF2 Password Hashing for PHP - Defuse Security](https://defuse.ca/php-pbkdf2.htm)
 
 Advantage
 -------------
 Nothing special but FREEDOM.
-It is easy to use and simple to understand. It is a stand alone file does not have to extends anything or put in some specific location.
-Under LGPL v3 license, you can feel free to modify this code. I don't know know which license shall i choose, i think this license is freedom enough, so i pick it. You have better ideas, please let me know.
+
+It is easy to use and simple to understand.
+
+It is a stand alone file does not have to extends anything or put in some specific location.
+Under LGPL v3 license, you can feel free to modify this code. I don't know which license shall I choose, I think this license is freedom enough, so I picked it.
+However, I am not a lawyer, you know.If you have better ideas, please let me know.(∩_∩)
 
 Requirement
 -------------

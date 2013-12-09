@@ -7,11 +7,17 @@ No huge difference with other implementation.
 Install
 -------------
 ###Easy Way:###
+
 Put in
+
     protected/extensions
+
 folder. And put
+
     'ext.pbkdf2.HashHelper'
+
 inside config/main.php, like following:
+
      'import' => array(
             'application.models.*',
             'application.components.*',
@@ -24,8 +30,11 @@ inside config/main.php, like following:
 ###Expert Way:###
 Put wherever you want, and import the class manually whenever you like.
 By using
+
     Yii::import('alias.folderAlias.HeshHelper');
+
 like
+
     Yii::import('ext.pbkdf2.HashHelper');
 
 Use
@@ -46,6 +55,7 @@ Config
 Don't change any thing.
 ###Expert Way###
 Check out the source page. And my edition as well, you will notice what i simplified.
+
 [PBKDF2 Password Hashing for PHP - Defuse Security](https://defuse.ca/php-pbkdf2.htm)
 
 Advantage

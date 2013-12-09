@@ -6,7 +6,7 @@ No huge difference with other implementation.
 
 Install
 -------------
-#Easy Way:#
+###Easy Way:###
 Put in
     protected/extensions
 folder. And put
@@ -21,7 +21,7 @@ inside config/main.php, like following:
             'ext.pbkdf2.HashHelper'
         ),
 
-#Expert Way:#
+###Expert Way:###
 Put wherever you want, and import the class manually whenever you like.
 By using
     Yii::import('alias.folderAlias.HeshHelper');
@@ -30,9 +30,9 @@ like
 
 Use
 -------------
-#To Hash Password#
+###To Hash Password###
     HashHelper::hashPassword($raw_text);
-#To verify Password#
+###To verify Password###
     HashHelper::verifyPassword($rawPassword, $good_hash));
 
 Format
@@ -42,9 +42,9 @@ Yes we store salt and password in the same field, it is easy to handle, simpler 
 
 Config
 -------------
-#Easy Way#
+###Easy Way###
 Don't change any thing.
-#Expert Way#
+###Expert Way###
 Check out the source page. And my edition as well, you will notice what i simplified.
 [PBKDF2 Password Hashing for PHP - Defuse Security](https://defuse.ca/php-pbkdf2.htm)
 

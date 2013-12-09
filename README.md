@@ -38,8 +38,8 @@ Use
 
 Format
 -------------
-we need a char/varchar field for at least 65 column long for 32-digit long salt and 32-digit long Hash and a ':' as separator
-Yes we store salt and password in the same field, it is easy to handle, simpler than what havoc do.
+we need a char/varchar field for at least 65 column long.It contains 32-digit salt and 32-digit Hash code and a ':' as separator
+Yes we store salt and password in the same field, it is easy to handle. And by removing storage of algorithm and iteration, it become simpler than what havoc do.
 
 Config
 -------------
@@ -52,8 +52,11 @@ Check out the source page. And my edition as well, you will notice what i simpli
 
 Advantage
 -------------
-Nothing special. But it is easy to use and simple to understand.
+Nothing special but FREEDOM.
+It is easy to use and simple to understand. It is a stand alone file does not have to extends anything or put in some specific location.
+Under LGPL v3 license, you can feel free to modify this code. I don't know know which license shall i choose, i think this license is freedom enough, so i pick it. You have better ideas, please let me know.
 
 Requirement
 -------------
 Require PHP5.3++,MCRYPT extension support.
+

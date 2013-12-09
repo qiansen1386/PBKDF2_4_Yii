@@ -8,15 +8,7 @@ Install
 -------------
 ###Easy Way:###
 
-Put HashHelper class file in
-
-``protected/extensions``
-
-folder. And put
-
-``'ext.pbkdf2.HashHelper'``
-
-inside config/main.php, like following:
+Put HashHelper class file in ``protected/extensions`` folder. And put ``'ext.pbkdf2.HashHelper'`` inside config/main.php, like following:
 
      'import' => array(
             'application.models.*',

@@ -58,9 +58,9 @@ It is easy to use and simple to understand.
 
 It is a stand alone file does not have to extends anything or put in some specific location.
 Under LGPL v3 license, you can feel free to modify this code. I don't know which license shall I choose, I think this license is freedom enough, so I picked it.
-However, I am not a lawyer, you know.If you have better ideas, please let me know.(∩_∩)
+However, I am not a lawyer, you know. If you have better ideas, please let me know.(∩_∩)
 
 Requirement
 -------------
-Require PHP5.3++,MCRYPT extension support.
+Require PHP5.3++ and MCRYPT extension support.
 

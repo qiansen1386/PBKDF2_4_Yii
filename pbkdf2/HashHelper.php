@@ -86,9 +86,9 @@ class HashHelper
     public static function pbkdf2($algorithm = self::_algorithm, $password, $salt, $count, $key_length, $raw_output = false)
     {
         $algorithm = strtolower($algorithm);
-        if(!in_array($algorithm, hash_algos(), true))
+        if (!in_array($algorithm, hash_algos(), true))
             die('PBKDF2 ERROR: Invalid hash algorithm.');
-        if($count <= 0 || $key_length <= 0)
+        if ($count <= 0 || $key_length <= 0)
             die('PBKDF2 ERROR: Invalid parameters.');
 
         if (function_exists("hash_pbkdf2")) {
@@ -103,7 +103,7 @@ class HashHelper
         $block_count = ceil($key_length / $hash_length);
 
         $output = "";
-        for($i = 1; $i <= $block_count; $i++) {
+        for ($i = 1; $i <= $block_count; $i++) {
             // $i encoded as 4 bytes, big endian.
             $last = $salt . pack("N", $i);
             // first iteration
@@ -115,7 +115,7 @@ class HashHelper
             $output .= $xorsum;
         }
 
-        if($raw_output)
+        if ($raw_output)
             return substr($output, 0, $key_length);
         else
             return bin2hex(substr($output, 0, $key_length));
@@ -129,9 +129,9 @@ class HashHelper
     public static function verifyPassword($password, $good_hash)
     {
         $params = explode(":", $good_hash);
-    if(count($params) < self::HASH_SECTIONS){
-        return false;
-    }
+        if (count($params) < self::HASH_SECTIONS) {
+            return false;
+        }
         $pbkdf2 = base64_decode($params[self::HASH_PBKDF2_INDEX]);
         return self::slow_equals(
             $pbkdf2,

@@ -1,6 +1,8 @@
 PBKDF2_4_Yii
 ============
 
+>**Deprecated**: Please do not use this project even in development stage! Use PHP build-in bcrypt feature / build-in Security features in Yii2 instead!
+
 A PBKDF2 implementation for Yii framework put at wherever you want, you may use it for PBKDF2 hashing.
 No huge difference with other implementation.
 
